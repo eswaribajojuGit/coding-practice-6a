@@ -1,0 +1,47 @@
+GET http://localhost:3000/districts/322/
+Content-Type:application/json 
+
+{
+  districtId: 322,
+  districtName: "Haveri",
+  stateId: 36,
+  cases: 2816,
+  cured: 2424,
+  active: 172,
+  deaths: 220,
+}
+
+###
+
+GET http://localhost:3000/states/:stateId/stats/
+Content-Type:application/json
+
+{
+  totalCases: 724355,
+  totalCured: 615324,
+  totalActive: 99254,
+  totalDeaths: 9777
+}
+
+###
+
+
+GET http://localhost:3000/districts/2/details/
+Content-Type:application/json
+
+{
+  stateName: "Maharashtra"
+}
+
+###
+
+PUT http://localhost:3000/districts/:districtId/
+
+###
+
+
+DELETE http://localhost:3000/districts/:districtId/
+
+###
+
+
